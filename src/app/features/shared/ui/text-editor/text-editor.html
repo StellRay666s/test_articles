@@ -1,0 +1,9 @@
+<div class="controls">
+  <button class="primary_button" [disabled]="!currentColor" (click)="coloredSelection()">
+    Добавить аннотацияю
+  </button>
+  <input (change)="changeColor($event)" type="color" [(ngModel)]="currentColor" />
+  <button (click)="saveArticle()" class="primary_button">Сохранить статью</button>
+</div>
+<input [(ngModel)]="currentTitle" placeholder="Название" />
+<div #editor class="text_area" appSelectionText style="height: 500px" contenteditable="true"></div>

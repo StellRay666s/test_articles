@@ -1,0 +1,11 @@
+<div class="main_content_page">
+  @if (getByUuId$ | async;as editorContent) {
+  <app-text-editor
+    [annotations]="editorContent.annotations!"
+    [currentTitle]="editorContent.title"
+    [textArticle]="editorContent.text"
+    (handleSave)="saveArticle($event)"
+  ></app-text-editor>
+  }
+
+</div>

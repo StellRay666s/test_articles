@@ -1,0 +1,17 @@
+<div class="main_content_page">
+  <div class="header">
+    <button (click)="createArticle()" class="primary_button">Создать статью</button>
+  </div>
+  <div class="list">
+    @for (item of articlesList$ | async; track $index) {
+      <app-article-plate
+        [uuId]="item.uuId"
+        (handlerUpdate)="updateArticle($event)"
+        (handlerDelete)="deleteArticle($event)"
+        [title]="item.title"
+      ></app-article-plate>
+    } @empty {
+      Список пуст
+    }
+  </div>
+</div>

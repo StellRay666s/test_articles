@@ -1,0 +1,17 @@
+:host {
+  display: block;
+}
+
+.container{
+  display: flex;
+  padding: 6px;
+  border: 1px solid teal;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+}  
+
+.btns{
+    display: flex;
+    gap: 8px;
+  }

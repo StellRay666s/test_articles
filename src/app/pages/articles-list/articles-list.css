@@ -1,0 +1,17 @@
+:host {
+  display: block;
+}
+.container{
+  padding: 6px;
+  width: 700px;
+  margin: 0 auto;
+  border: 2px solid teal;
+  border-radius: 6px;
+  display: grid;
+  row-gap: 10px;
+}
+
+.list {
+  display: grid;
+  row-gap: 6px;
+}
